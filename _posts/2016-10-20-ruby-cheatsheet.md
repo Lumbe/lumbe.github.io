@@ -6,7 +6,7 @@ tags: ruby, cheatsheet
 В Ruby все объект
 
 Включая числа, строки и даже nil — они все наследуются от класса Object. Можно у чего угодно вызывать методы вроде nil?, class, methods и respond_to?:
-{% hihglight ruby %}
+{% highlight ruby %}
 'Hello world'.class # String
 nil.class # NilClass
 String.class # Class
