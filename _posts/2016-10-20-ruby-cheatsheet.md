@@ -1,10 +1,9 @@
 ---
 title: Ruby шпаргалка - наиболее часто используемые функции.
 category: ruby
-tags: ruby, cheatsheet
+tags: [ruby, cheatsheet]
 ---
-В Ruby все объект
-
+**В Ruby все объект**
 Включая числа, строки и даже nil — они все наследуются от класса Object. Можно у чего угодно вызывать методы вроде nil?, class, methods и respond_to?:
 {% highlight ruby %}
 'Hello world'.class # String
