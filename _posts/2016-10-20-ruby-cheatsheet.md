@@ -1,6 +1,6 @@
 ---
 title: Ruby шпаргалка - наиболее часто используемые функции.
-category: ruby
+category:ruby
 tags: [ruby, cheatsheet]
 ---
 **В Ruby все объект**
