@@ -108,9 +108,10 @@ puts 'ok' if nil.respond_to? 'nil?'
 -----
 Стоит почитать [Ruby за двадцать минут](http://www.ruby-lang.org/ru/documentation/quickstart/), ну а главный друг и помощник [ruby-doc.org](http://ruby-doc.org/).
 Лучше сразу посмотреть методы базовых классов (во всех — какие бывают each_ и to_).
-[String](http://ruby-doc.org/core-2.0.0/String.html) (тут — первым делом match, sub)
-[Array](http://ruby-doc.org/core-2.0.0/Array.html) (map, join, include?)
-[Hash](http://ruby-doc.org/core-2.0.0/Hash.html) (has_key?, has_value?, merge)
+
+- [String](http://ruby-doc.org/core-2.0.0/String.html) (тут — первым делом match, sub)
+- [Array](http://ruby-doc.org/core-2.0.0/Array.html) (map, join, include?)
+- [Hash](http://ruby-doc.org/core-2.0.0/Hash.html) (has_key?, has_value?, merge)
 
 Классы, модули и метапрограммирование
 -----
@@ -118,12 +119,12 @@ puts 'ok' if nil.respond_to? 'nil?'
 
 {% highlight ruby %}
 Class Foo
-    def bar
-        10 # любой метод возвращает значение - результат выполнения последнего выражения
-    end
-    def baz(a)
-        bar + 20
-    end
+  def bar
+    10 # любой метод возвращает значение - результат выполнения последнего выражения
+  end
+  def baz(a)
+    bar + 20
+  end
 end
 puts Foo.new.baz(10) # 30
 {% endhighlight %}
@@ -218,7 +219,6 @@ puts Baz.new.baz # baz
 {% endhighlight %}
 
 Как раз такой подход используется на практике — по сути, получается что-то вроде примеси, в которую можно передавать параметры. Это кажется магией, если не знать, как это делается. Патчить можно и базовые классы, особенно любимы Array и String — но всегда стоит подумать трижды, прежде чем начинать их мучить: одно дело методы вроде .blank? (его добавляет Rails: что-то вроде def blank?; nil? || empty? end), другое — когда код метода специфичен для проекта, тогда логично предположить, что он относится к каким-то классам внутри проекта.
-
 По такому принципу работает, например accessor. Что мы сделаем, чтобы добавить публичный параметр в Ruby-класс?
 
 {% highlight ruby %}
@@ -244,6 +244,6 @@ end
 
 Готовы дальше? Тогда:
 
-[Вникаем в метаклассы Ruby](http://habrahabr.ru/post/143990/)
-[Metaprogramming patterns — про monkey patching](http://habrahabr.ru/post/50819/), [Reuse в малом — bang!](http://habrahabr.ru/post/50169/), [eval](http://habrahabr.ru/post/49951/)
-[Вникаем в include и extend](http://habrahabr.ru/post/143483/)
+- [Вникаем в метаклассы Ruby](http://habrahabr.ru/post/143990/)
+- [Metaprogramming patterns — про monkey patching](http://habrahabr.ru/post/50819/), [Reuse в малом — bang!](http://habrahabr.ru/post/50169/), [eval](http://habrahabr.ru/post/49951/)
+- [Вникаем в include и extend](http://habrahabr.ru/post/143483/)
