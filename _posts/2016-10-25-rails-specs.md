@@ -3,18 +3,18 @@ title: Ruby on Rails 5.0. Тесты с RSpec, Capybara, Shoulda-Matchers, Datab
 category: ruby on rails
 tags: [ruby on rails, specs, rspec, capybara, shoulda-matchers]
 ---
-1. Список используемых гемов
+Список используемых гемов
 -----
 
-- [rspec rails](https://github.com/rspec/rspec-rails) - фреймворк для тестирования
-- [capybara](https://github.com/jnicklas/capybara) - имитация действий реального пользователя
-- [factory girl](https://github.com/thoughtbot/factory_girl), [factory_girl_rails](https://github.com/thoughtbot/factory_girl_rails) - библиотека для создания "фабрик"(ruby объектов в качестве тестовых данных)
-- [faker](https://github.com/stympy/faker) - библиотека для генерации рандомных данных(имена, телефоны, электронная почта)
-- [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers) - добавляет однострочные матчеры(matchers) к RSpec. Без них тесты были
+- [rspec rails](https://github.com/rspec/rspec-rails){:target="_blank"} - фреймворк для тестирования
+- [capybara](https://github.com/jnicklas/capybara){:target="_blank"} - имитация действий реального пользователя
+- [factory girl](https://github.com/thoughtbot/factory_girl){:target="_blank"}, [factory_girl_rails](https://github.com/thoughtbot/factory_girl_rails) - библиотека для создания "фабрик"(ruby объектов в качестве тестовых данных)
+- [faker](https://github.com/stympy/faker){:target="_blank"} - библиотека для генерации рандомных данных(имена, телефоны, электронная почта)
+- [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers){:target="_blank"} - добавляет однострочные матчеры(matchers) к RSpec. Без них тесты были
 бы намного длиннее, сложнее и предрасположены к ошибкам
-- [database cleaner](https://github.com/DatabaseCleaner/database_cleaner) - набор стратегий для очистки базы данных, что бы гарантировать чистое состояние БД по время тестов
+- [database cleaner](https://github.com/DatabaseCleaner/database_cleaner){:target="_blank"} - набор стратегий для очистки базы данных, что бы гарантировать чистое состояние БД по время тестов
 
-2. Создание фабрик с Factory Girl и Faker
+Создание фабрик с Factory Girl и Faker
 -----
 
 Каркас генерируется автоматически при генерации модели в rails:
@@ -44,9 +44,9 @@ FactoryGirl.define do
     come_in_office    { Faker::Boolean.boolean }
     phone_call        { Faker::Boolean.boolean }
     status            { Lead.statuses.keys.sample }
-    user                                                # association with :user factory
-    assignee                                            # association with aliased :user factory
-    department                                          # association with :department factory
+    user                            # association with :user factory
+    assignee                        # association with aliased :user factory
+    department                      # association with :department factory
   end
 end
 {% endhighlight %}
@@ -82,4 +82,4 @@ user.first_name
 # => "Joe"
 {% endhighlight %}
 
-Более подробно в [**Factory Girl шпаргалке**](https://github.com/brennovich/cheat-ruby-sheets/blob/master/factory_girl.md)
+Более подробно в [**Factory Girl шпаргалке**](https://github.com/brennovich/cheat-ruby-sheets/blob/master/factory_girl.md){:target="_blank"}
