@@ -8,7 +8,7 @@ tags: [ruby on rails, specs, rspec, capybara, shoulda-matchers]
 
 - [rspec rails](https://github.com/rspec/rspec-rails){:target="_blank"} - фреймворк для тестирования
 - [capybara](https://github.com/jnicklas/capybara){:target="_blank"} - имитация действий реального пользователя
-- [factory girl](https://github.com/thoughtbot/factory_girl){:target="_blank"}, [factory_girl_rails](https://github.com/thoughtbot/factory_girl_rails) - библиотека для создания "фабрик"(ruby объектов в качестве тестовых данных)
+- [factory girl](https://github.com/thoughtbot/factory_girl){:target="_blank"}, [factory_girl_rails](https://github.com/thoughtbot/factory_girl_rails){:target="_blank"} - библиотека для создания "фабрик"(ruby объектов в качестве тестовых данных)
 - [faker](https://github.com/stympy/faker){:target="_blank"} - библиотека для генерации рандомных данных(имена, телефоны, электронная почта)
 - [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers){:target="_blank"} - добавляет однострочные матчеры(matchers) к RSpec. Без них тесты были
 бы намного длиннее, сложнее и предрасположены к ошибкам
