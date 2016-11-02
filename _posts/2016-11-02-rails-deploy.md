@@ -3,7 +3,7 @@ title: Deploy RoR 5 приложения на digitalocean(capistrano).
 category: ruby on rails
 tags: [ruby on rails, deploy, digitalocean, capistrano]
 ---
-Deploy делаем по гайду на digitalocean [Deploying a Rails App on Ubuntu 14.04 with Capistrano, Nginx, and Pumahttps://www.digitalocean.com/community/tutorials/deploying-a-rails-app-on-ubuntu-14-04-with-capistrano-nginx-and-puma#step-6-—-adding-deployment-configurations-in-the-rails-app](https://www.digitalocean.com/community/tutorials/deploying-a-rails-app-on-ubuntu-14-04-with-capistrano-nginx-and-puma#step-6-—-adding-deployment-configurations-in-the-rails-app)
+Deploy делаем по гайду на digitalocean [Deploying a Rails App on Ubuntu 14.04 with Capistrano, Nginx, and Puma](https://www.digitalocean.com/community/tutorials/deploying-a-rails-app-on-ubuntu-14-04-with-capistrano-nginx-and-puma#step-6-—-adding-deployment-configurations-in-the-rails-app)
 
 Гайд не охватывает настройку **secret_key_base** и базы данных. Есть примеры с использованием
 environment variables, но мы используем другой метод.
