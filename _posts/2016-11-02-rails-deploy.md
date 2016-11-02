@@ -5,7 +5,7 @@ tags: [ruby on rails, deploy, digitalocean, capistrano]
 ---
 Deploy делаем по гайду на digitalocean [Deploying a Rails App on Ubuntu 14.04 with Capistrano, Nginx, and Pumahttps://www.digitalocean.com/community/tutorials/deploying-a-rails-app-on-ubuntu-14-04-with-capistrano-nginx-and-puma#step-6-—-adding-deployment-configurations-in-the-rails-app](https://www.digitalocean.com/community/tutorials/deploying-a-rails-app-on-ubuntu-14-04-with-capistrano-nginx-and-puma#step-6-—-adding-deployment-configurations-in-the-rails-app)
 
-Гайд не охватывает настройку **secret_key_base**. Есть примеры с использованием
+Гайд не охватывает настройку **secret_key_base** и базы данных. Есть примеры с использованием
 environment variables, но мы используем другой метод.
 
 1. Добавляем файлы *secrets.yml* и *database.yml* в .gitignore
@@ -16,6 +16,7 @@ config/database.yml
 config/secrets.yml
 {% endhighlight %}
 2. Генерируем secret код
+{% highlight ruby %}
 $ rake secret
 3e8bda57f936e07d15e150fccb7e18cd63f0e22a8e6ac1179780f60d6ee9a4a0fbbe1870580d2f358ef4a8cb77f9b14402a9b151246dca2d1a6dea6c62b68d57
 {% endhighlight %}
